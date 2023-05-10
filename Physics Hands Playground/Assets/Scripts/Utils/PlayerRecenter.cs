@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-//If you rotate the Player GO towards tutorial bot, this will always recenter it back to tutorial bot at runtime when called
 public class PlayerRecenter : MonoBehaviour
 {
     [SerializeField] public GameObject anchor;
@@ -37,7 +36,7 @@ public class PlayerRecenter : MonoBehaviour
         while(frameCount > 0)
         {
             frameCount--;
-            yield return null;
+            yield return new WaitForEndOfFrame();
         }
         Recenter();
     }

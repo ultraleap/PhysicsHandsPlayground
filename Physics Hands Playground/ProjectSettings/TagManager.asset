@@ -11,6 +11,8 @@ TagManager:
   - 
   - Water
   - UI
+  - No Contact
+  - Hand UI
   - 
   - 
   - 
@@ -34,9 +36,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Teleport
   m_SortingLayers:
   - name: Default
     uniqueID: 0

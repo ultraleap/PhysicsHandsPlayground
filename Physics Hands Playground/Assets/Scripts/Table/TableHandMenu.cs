@@ -73,7 +73,7 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
         private void OnBeginPhysics()
         {
             if (!_hasIgnored)
-            {
+            {                    
                 _hasIgnored = true;
 
                 Collider[] colliders = _root.GetComponentsInChildren<Collider>(true);
@@ -152,10 +152,10 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
         {
             if (_handToIgnore == null)
             {
-                PhysicsProvider provider = FindObjectOfType<PhysicsProvider>();
+                PhysicsProvider provider = FindObjectOfType<PhysicsProvider>(true);
                 if (provider != null)
                 {
-                    AttachmentHand attachmentHand = GetComponentInParent<AttachmentHand>();
+                    AttachmentHand attachmentHand = GetComponentInParent<AttachmentHand>(true);
                     if (attachmentHand != null)
                     {
                         if (attachmentHand.chirality == Leap.Unity.Chirality.Left)
