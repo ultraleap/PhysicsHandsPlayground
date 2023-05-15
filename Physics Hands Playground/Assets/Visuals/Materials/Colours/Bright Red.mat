@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Yellow
+  m_Name: Bright Red
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ValidKeywords:
   - _EMISSION
@@ -328,12 +328,12 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.9607843, g: 0.86222863, b: 0.08627448, a: 1}
+    - _BaseColor: {r: 0.8962264, g: 0.22533406, b: 0.097232126, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.96078426, g: 0.86222863, b: 0.08627445, a: 1}
+    - _Color: {r: 0.8962264, g: 0.22533402, b: 0.097232096, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
-    - _EmissionColor: {r: 0.4528302, g: 0.37842652, b: 0.0064079626, a: 1}
+    - _EmissionColor: {r: 0.5188679, g: 0, b: 0.0040694904, a: 1}
     - _EmissiveColor: {r: 0, g: 4.78, b: 0.10498025, a: 4.78}
     - _EmissiveColorLDR: {r: 0, g: 1, b: 0.15992439, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
@@ -346,7 +346,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &8391920437087499131
+--- !u!114 &1730218407347741128
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

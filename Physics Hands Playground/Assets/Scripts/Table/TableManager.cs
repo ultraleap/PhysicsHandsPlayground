@@ -31,6 +31,8 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
         private List<Transform> _teleportPositions = new List<Transform>();
 
         private int _tableUserIndex = -1;
+        [SerializeField, Tooltip("Increases the index at which the player will rotate around the table."), Range(1,8)]
+        private int _teleportIndexIncreaseAmount = 2;
 
         private void Start()
         {
@@ -71,7 +73,7 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
 
         public Transform TeleportToTable()
         {
-            _tableUserIndex = (_tableUserIndex + 1) % _teleportPositions.Count;
+            _tableUserIndex = (_tableUserIndex + _teleportIndexIncreaseAmount) % _teleportPositions.Count;
             Transform teleportPos = _teleportPositions[_tableUserIndex];
             _buttonRotation.rotation = Quaternion.Euler(0, Quaternion.LookRotation(transform.position - teleportPos.position, Vector3.up).eulerAngles.y - 28f, 0);
             return teleportPos;

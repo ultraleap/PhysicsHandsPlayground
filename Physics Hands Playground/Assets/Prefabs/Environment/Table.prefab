@@ -1016,6 +1016,7 @@ MonoBehaviour:
   - {fileID: 8332596455205225048}
   - {fileID: 346477339698577549}
   - {fileID: 6242028038678507932}
+  _teleportIndexIncreaseAmount: 2
 --- !u!1 &7027087642727649650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1314,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8357250780333686610}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ec198695cc8fd2c4389240867b467ee4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
