@@ -23,6 +23,7 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
         private PhysicsButton _physicsButton;
 
         private List<Rigidbody> _rigids = new List<Rigidbody>();
+        private List<bool> _states = new List<bool>();
         private List<Pose> _poses = new List<Pose>();
 
         [SerializeField]
@@ -36,11 +37,12 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
 
         private void Start()
         {
-            Rigidbody[] rigids = _objectArea.GetComponentsInChildren<Rigidbody>();
+            Rigidbody[] rigids = _objectArea.GetComponentsInChildren<Rigidbody>(true);
             foreach (var rigid in rigids)
             {
                 _rigids.Add(rigid);
                 _poses.Add(new Pose(rigid.transform.position, rigid.transform.rotation));
+                _states.Add(rigid.gameObject.activeInHierarchy);
             }
 
             _physicsButton = GetComponentInChildren<PhysicsButton>(true);
@@ -68,6 +70,7 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
                 _rigids[i].angularVelocity = Vector3.zero;
                 _rigids[i].MovePosition(_poses[i].position);
                 _rigids[i].MoveRotation(_poses[i].rotation);
+                _rigids[i].gameObject.SetActive(_states[i]);
             }
         }
 
