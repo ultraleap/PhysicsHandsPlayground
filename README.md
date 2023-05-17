@@ -1,5 +1,7 @@
 # Physics Hands Playground
 
+![Physics Hands Playground](https://github.com/ultraleap/PhysicsHandsPlayground/assets/6281246/e445cf49-d933-430a-bc7f-1ef0db46ab7f)
+
 This repo is a living development and demo environment for [Ultraleap Physics Hands](https://github.com/ultraleap/UnityPlugin/tree/develop/Packages/Tracking%20Preview/PhysicsHands). It centers around a core scene with multiple tables with varying types of interactable objects.
 
 Notably this shows off an ideal project setup for Physics Hands, with a few helpful extra scripts and tools allowing you to try it out, or build off of it quickly.
