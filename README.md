@@ -12,7 +12,7 @@ As this is a living development environment we will have multiple branches that 
 
 **This repo is a Unity project, and does not provide any builds.**
 
-The project is using **[Unity 2021.3.23f1](https://unity.com/releases/editor/whats-new/2021.3.23)**.
+The project is using **[Unity 2021.3.25f1](https://unity.com/releases/editor/whats-new/2021.3.25)**.
 
 You will need the same requirements as the [Ultraleap Unity Plugin](https://github.com/ultraleap/UnityPlugin/blob/develop/README.md#getting-started).
 
