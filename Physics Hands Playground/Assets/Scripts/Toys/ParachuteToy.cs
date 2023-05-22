@@ -25,6 +25,8 @@ public class ParachuteToy : MonoBehaviour
     private float _originalDrag, _originalAngularDrag;
     private Vector3 _originalParachutePos;
 
+    private ConfigurableJoint _currentJoint;
+
     private void OnValidate()
     {
         FindElements();
@@ -52,7 +54,7 @@ public class ParachuteToy : MonoBehaviour
         }
         _originalDrag = _character.drag;
         _originalAngularDrag = _character.angularDrag;
-        _originalParachutePos = _parachute.transform.position;
+        _originalParachutePos = _parachute.transform.position - _character.transform.position;
         Collider[] charCols = _character.GetComponentsInChildren<Collider>(true);
         Collider[] paraCols = _parachute.GetComponentsInChildren<Collider>(true);
         for (int i = 0; i < charCols.Length; i++)
@@ -90,6 +92,10 @@ public class ParachuteToy : MonoBehaviour
                 _yTimeOutCurrent = 0f;
                 _parachuteActive = false;
                 _parachute.gameObject.SetActive(false);
+                if(_currentJoint != null)
+                {
+                    Destroy(_currentJoint);
+                }
                 _character.drag = _originalDrag;
                 _character.angularDrag = _originalAngularDrag;
             }
@@ -112,12 +118,29 @@ public class ParachuteToy : MonoBehaviour
             if(_yTimeInCurrent > _yTimeIn)
             {
                 _parachuteActive = true;
-                //_parachute.MovePosition(_character.position + (_character.rotation * _originalParachutePos));
-                //_parachute.MoveRotation(_character.rotation);
                 _parachute.gameObject.SetActive(true);
+                _parachute.transform.position = _character.position + (_character.rotation * _originalParachutePos);
+                _parachute.transform.rotation = _character.rotation;
+                _currentJoint = AddJoint(_parachute.gameObject, _character);
+
                 _character.drag = _parachutingDrag;
                 _character.angularDrag = _parachutingAngularDrag;
             }
         }
+    }
+
+    private ConfigurableJoint AddJoint(GameObject gameObject, Rigidbody connection)
+    {
+        ConfigurableJoint joint = gameObject.AddComponent<ConfigurableJoint>();
+        joint.xMotion = ConfigurableJointMotion.Locked;
+        joint.yMotion = ConfigurableJointMotion.Locked;
+        joint.zMotion = ConfigurableJointMotion.Locked;
+        joint.angularXMotion = ConfigurableJointMotion.Free;
+        joint.angularYMotion = ConfigurableJointMotion.Locked;
+        joint.angularZMotion = ConfigurableJointMotion.Locked;
+        joint.autoConfigureConnectedAnchor = false;
+        joint.connectedBody = connection;
+        joint.connectedAnchor = _originalParachutePos;
+        return joint;
     }
 }
