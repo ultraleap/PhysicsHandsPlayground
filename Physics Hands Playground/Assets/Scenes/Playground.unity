@@ -244,18 +244,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4919733445201370149, guid: 7641adf1a7937f94bb9780e183baaeae, type: 3}
   m_PrefabInstance: {fileID: 237179842}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &19137032
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &28879679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1384,18 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 3
   bounceCombine: 0
+--- !u!134 &159580774
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1001 &175203798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1406,7 +1406,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174974210}
+      objectReference: {fileID: 1540796318}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1872,6 +1872,18 @@ MonoBehaviour:
   _body: {fileID: 219929777}
   _finger: 2
   _joint: 0
+--- !u!134 &227386073
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &234673936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2058,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &289888940
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &299478101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,18 +2304,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2582c1445b838408c491e44b4b015c, type: 3}
---- !u!134 &311631028
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1001 &318676916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2338,7 +2350,7 @@ PrefabInstance:
     - target: {fileID: 42634057409736264, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1137797218}
+      objectReference: {fileID: 159580774}
     - target: {fileID: 42634057409736267, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _button
       value: 
@@ -2378,7 +2390,7 @@ PrefabInstance:
     - target: {fileID: 42634057766791719, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1631650551}
+      objectReference: {fileID: 1374533103}
     - target: {fileID: 42634057770350935, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -2458,7 +2470,7 @@ PrefabInstance:
     - target: {fileID: 42634058768397130, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 76390135}
+      objectReference: {fileID: 897424363}
     - target: {fileID: 42634058768397133, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _button
       value: 
@@ -2550,7 +2562,7 @@ PrefabInstance:
     - target: {fileID: 555462451873194290, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1647617513}
+      objectReference: {fileID: 1887488868}
     - target: {fileID: 2264961516555059294, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _tableManager
       value: 
@@ -2558,7 +2570,7 @@ PrefabInstance:
     - target: {fileID: 2816180287812884511, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1435580912}
+      objectReference: {fileID: 507785397}
     - target: {fileID: 6652356965569668407, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_text
       value: Toys
@@ -2635,6 +2647,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 42634059218843478, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
   m_PrefabInstance: {fileID: 318676916}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &347638111
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &349786206
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,6 +3031,18 @@ MonoBehaviour:
   pinkyTip: {fileID: 0}
   _chirality: 1
   _isTracked: 1
+--- !u!134 &507785397
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!114 &510901185 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 42634058053967804, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
@@ -3018,7 +3054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!134 &536733239
+--- !u!134 &518243180
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4480,18 +4516,6 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 0
   bounceCombine: 1
---- !u!134 &861218959
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1001 &886031530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4719,6 +4743,18 @@ MonoBehaviour:
   _body: {fileID: 895268618}
   _finger: 4
   _joint: 0
+--- !u!134 &897424363
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &901722084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4755,6 +4791,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &917470015
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &925313616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d18a48cd7046f94a8777be13a1d23b1, type: 3}
@@ -5044,6 +5092,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4919733445201370149, guid: 7641adf1a7937f94bb9780e183baaeae, type: 3}
   m_PrefabInstance: {fileID: 7517110869294473232}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &938290375
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &941470374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2945233218002697858, guid: 85bdae4f36eb5b14c9fac95aec79bf2f, type: 3}
@@ -5222,7 +5282,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1308738111}
+      objectReference: {fileID: 1124882462}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5494,6 +5554,18 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
+--- !u!134 &976914392
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &1025192232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,18 +5616,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!134 &1025370888
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!134 &1037139697
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -5683,6 +5743,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cb4a72e01d8f12449e0bbc63f6c0767, type: 3}
+--- !u!134 &1124882462
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1001 &1133469159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5693,7 +5765,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1025370888}
+      objectReference: {fileID: 289888940}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5925,30 +5997,6 @@ MonoBehaviour:
   _body: {fileID: 1140313421}
   _finger: 0
   _joint: 2
---- !u!134 &1174974210
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &1232205580
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1239991996
 GameObject:
   m_ObjectHideFlags: 0
@@ -6180,7 +6228,12 @@ MonoBehaviour:
   _body: {fileID: 1292790087}
   _finger: 1
   _joint: 0
---- !u!134 &1308738111
+--- !u!4 &1317746596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8278762408294610013, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
+  m_PrefabInstance: {fileID: 175203798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!134 &1330771836
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6192,11 +6245,6 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 3
   bounceCombine: 0
---- !u!4 &1317746596 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8278762408294610013, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
-  m_PrefabInstance: {fileID: 175203798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1369081568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96b537658eae2bf478cc137292be4af8, type: 3}
@@ -6601,6 +6649,18 @@ MonoBehaviour:
   - {fileID: 1369081571}
   _isTrigger: 0
   _material: {fileID: 0}
+--- !u!134 &1374533103
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &1376096606
 GameObject:
   m_ObjectHideFlags: 0
@@ -6717,6 +6777,18 @@ MonoBehaviour:
   _body: {fileID: 1376096609}
   _finger: 3
   _joint: 2
+--- !u!134 &1398291643
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &1399269723
 GameObject:
   m_ObjectHideFlags: 0
@@ -7047,18 +7119,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403581566}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!134 &1408941228
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!134 &1435580912
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -7313,6 +7373,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!134 &1522626860
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
+--- !u!134 &1540796318
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &1551173635 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a2582c1445b838408c491e44b4b015c, type: 3}
@@ -7339,6 +7423,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!134 &1571764802
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!134 &1577303496
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -8898,18 +8994,6 @@ MonoBehaviour:
   _body: {fileID: 1752786496}
   _finger: 0
   _joint: 0
---- !u!134 &1759811688
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1780295888
 GameObject:
   m_ObjectHideFlags: 0
@@ -14377,18 +14461,6 @@ MonoBehaviour:
   _body: {fileID: 1863936761}
   _finger: 0
   _joint: 1
---- !u!134 &1872973404
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1882974074
 GameObject:
   m_ObjectHideFlags: 0
@@ -14503,6 +14575,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882974074}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!134 &1887488868
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!134 &1892382397
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -14648,18 +14732,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5270838610523157748, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
   m_PrefabInstance: {fileID: 1823644880}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &1934267120
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1936326220
 GameObject:
   m_ObjectHideFlags: 0
@@ -15008,18 +15080,6 @@ MonoBehaviour:
   _body: {fileID: 1949878917}
   _finger: 2
   _joint: 1
---- !u!134 &1954573790
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &2009099049
 GameObject:
   m_ObjectHideFlags: 0
@@ -16205,7 +16265,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 311631028}
+      objectReference: {fileID: 1330771836}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -18807,7 +18867,7 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 30
+    limit: 40
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
