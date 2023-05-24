@@ -19,6 +19,8 @@ public class HingeSoftSnappingToy : MonoBehaviour
     [SerializeField]
     private float _rotationThreshold = 5f;
 
+    private bool _hasBroken = false;
+
     private void OnValidate()
     {
         if (_joint == null)
@@ -38,7 +40,17 @@ public class HingeSoftSnappingToy : MonoBehaviour
     private void FixedUpdate()
     {
         if (_joint == null)
+        {
+            if(!_hasBroken)
+            {
+                Rigidbody r = GetComponent<Rigidbody>();
+                if(r != null)
+                {
+                    r.angularDrag = 0.05f;
+                }
+            }
             return;
+        }
 
         float angle = Vector3.Angle(_originalUp, transform.parent.InverseTransformDirection(transform.up));
         if (Vector3.Cross(_originalUp, transform.parent.InverseTransformDirection(transform.up)).x < 0)
