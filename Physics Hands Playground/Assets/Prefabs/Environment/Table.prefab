@@ -523,7 +523,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfdc811f6b2f964f9839cad8ceba7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisableHandCollisions: 0
+  DisableAllHandCollisions: 0
+  DisableSpecificHandCollisions: 0
+  DisabledHandedness: 0
 --- !u!54 &7247063348552967735
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -874,7 +876,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 2599554395786449591}
   _buttonElement: {fileID: 3799698155474539753}
+  _ignoreHelper: {fileID: 903723547962737348}
   _handsOnly: 1
+  _fingerTipsOnly: 0
+  _allowLeftHand: 1
+  _allowRightHand: 1
   buttonHeightLimit: 0.01
   _springForce: 100
   _springDampening: 5
@@ -1208,6 +1214,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 62377eee87570c847a599538998997aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62377eee87570c847a599538998997aa, type: 3}
 --- !u!23 &5115442492796826296 stripped
@@ -1294,6 +1304,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7585a62c2549cb347b601f88c490c020, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7585a62c2549cb347b601f88c490c020, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7585a62c2549cb347b601f88c490c020, type: 3}

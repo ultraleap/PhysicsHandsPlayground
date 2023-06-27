@@ -50,7 +50,7 @@ public class ParachuteToy : MonoBehaviour
     {
         if(_physicProvider != null)
         {
-            _physicProvider.OnObjectStateChange += OnObjectStateChange;
+            _physicProvider.SubscribeToStateChanges(_character, OnObjectStateChange);
         }
         _originalDrag = _character.drag;
         _originalAngularDrag = _character.angularDrag;
@@ -66,12 +66,9 @@ public class ParachuteToy : MonoBehaviour
         }
     }
 
-    private void OnObjectStateChange(Rigidbody rigid, PhysicsGraspHelper helper)
+    private void OnObjectStateChange(PhysicsGraspHelper helper)
     {
-        if(rigid == _character)
-        {
-            _characterGrabbed = helper.GraspState == PhysicsGraspHelper.State.Grasp;
-        }
+        _characterGrabbed = helper.GraspState == PhysicsGraspHelper.State.Grasp;
     }
 
     private void FixedUpdate()

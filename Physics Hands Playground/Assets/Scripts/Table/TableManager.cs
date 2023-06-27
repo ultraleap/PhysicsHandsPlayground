@@ -1,7 +1,5 @@
-using Leap.Unity.Interaction.PhysicsHands;
-using System.Collections;
+using System;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace Leap.Unity.Interaction.PhysicsHands.Playground
@@ -34,6 +32,8 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
         private int _tableUserIndex = -1;
         [SerializeField, Tooltip("Increases the index at which the player will rotate around the table."), Range(1,8)]
         private int _teleportIndexIncreaseAmount = 2;
+
+        public Action OnResetTable;
 
         private void Start()
         {
@@ -72,6 +72,7 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
                 _rigids[i].MoveRotation(_poses[i].rotation);
                 _rigids[i].gameObject.SetActive(_states[i]);
             }
+            OnResetTable?.Invoke();
         }
 
         public Transform TeleportToTable()
