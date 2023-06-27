@@ -128,18 +128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4919733445201370149, guid: 7641adf1a7937f94bb9780e183baaeae, type: 3}
   m_PrefabInstance: {fileID: 237179842}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &16847663
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &28879679
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,9 +276,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 33380478}
   _finger: 3
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &47351886
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,18 +323,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &76390135
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &76579019
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,9 +695,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 89480574}
   _finger: 0
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &98130961 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 21b970684ebf586419407d075b484853, type: 3}
@@ -999,9 +987,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 106933746}
   _finger: 1
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &117870679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,7 +1138,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 938459960}
+      objectReference: {fileID: 867546792}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1196,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 938459960}
+      objectReference: {fileID: 867546792}
     - target: {fileID: 6114337822547080949, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _tableColor.a
       value: 0.93333334
@@ -1369,9 +1363,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 175569137}
   _finger: 2
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &195228997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,9 +1486,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 195229000}
   _finger: 1
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &212286078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,9 +1900,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 281425858}
   _finger: 5
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!4 &281425860
 Transform:
   m_ObjectHideFlags: 0
@@ -2064,7 +2076,7 @@ PrefabInstance:
     - target: {fileID: 42634057409736264, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2068620316}
+      objectReference: {fileID: 1144393320}
     - target: {fileID: 42634057409736267, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _button
       value: 
@@ -2072,7 +2084,7 @@ PrefabInstance:
     - target: {fileID: 42634057409736267, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 1137797218}
+      objectReference: {fileID: 1144393320}
     - target: {fileID: 42634057413343562, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -2100,11 +2112,11 @@ PrefabInstance:
     - target: {fileID: 42634057766791718, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 1631650551}
+      objectReference: {fileID: 1625973081}
     - target: {fileID: 42634057766791719, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1733741727}
+      objectReference: {fileID: 1625973081}
     - target: {fileID: 42634057770350935, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -2184,7 +2196,7 @@ PrefabInstance:
     - target: {fileID: 42634058768397130, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 716154850}
+      objectReference: {fileID: 2011519332}
     - target: {fileID: 42634058768397133, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _button
       value: 
@@ -2192,7 +2204,7 @@ PrefabInstance:
     - target: {fileID: 42634058768397133, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 76390135}
+      objectReference: {fileID: 2011519332}
     - target: {fileID: 42634058924356580, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -2268,6 +2280,10 @@ PrefabInstance:
     - target: {fileID: 42634059218843481, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _handToIgnore
       value: 
+      objectReference: {fileID: 623990353}
+    - target: {fileID: 42634059218843481, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
+      propertyPath: _tableButtons.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 42634059395850451, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Layer
@@ -2276,7 +2292,11 @@ PrefabInstance:
     - target: {fileID: 555462451873194290, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1913617427}
+      objectReference: {fileID: 2126815191}
+    - target: {fileID: 1849534892283449087, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
+      propertyPath: m_text
+      value: Joints
+      objectReference: {fileID: 0}
     - target: {fileID: 2264961516555059294, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _tableManager
       value: 
@@ -2284,7 +2304,7 @@ PrefabInstance:
     - target: {fileID: 2816180287812884511, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2018570217}
+      objectReference: {fileID: 1616541265}
     - target: {fileID: 5626193733232647237, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2296,11 +2316,11 @@ PrefabInstance:
     - target: {fileID: 7487974302366379742, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _button
       value: 
-      objectReference: {fileID: 1474155352}
+      objectReference: {fileID: 0}
     - target: {fileID: 7487974302366379742, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 1647617513}
+      objectReference: {fileID: 2126815191}
     - target: {fileID: 8117862984286341033, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _button
       value: 
@@ -2308,7 +2328,7 @@ PrefabInstance:
     - target: {fileID: 8117862984286341033, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 1435580912}
+      objectReference: {fileID: 1616541265}
     - target: {fileID: 9212878594567171565, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
       propertyPath: _tableManager
       value: 
@@ -2567,9 +2587,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 399053324}
   _finger: 0
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!114 &411849902 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 42634057742625202, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
@@ -2658,6 +2684,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d18a48cd7046f94a8777be13a1d23b1, type: 3}
+--- !u!134 &439460661
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &459097682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,9 +2809,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 459097685}
   _finger: 4
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!4 &475669222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4919733445201370149, guid: 7641adf1a7937f94bb9780e183baaeae, type: 3}
@@ -2881,7 +2925,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 481290139}
   _adjustInertiaTensor: 0
   _inertiaTensor: {x: 1, y: 1, z: 1}
-  _originalInertiaTensor: {x: 0.00974051, y: 0.004716157, z: 0.010671154}
+  _originalInertiaTensor: {x: 0.0068294825, y: 0.0019919646, z: 0.006829481}
   _adjustCenterOfMass: 1
   _centerOfMassOffset: {x: 0, y: -0.025, z: 0}
   _originalCenterOfMass: {x: 0.0059431237, y: -0.0073279324, z: -0.00011320288}
@@ -2968,6 +3012,7 @@ MonoBehaviour:
   pinkyMiddleJoint: {fileID: 0}
   pinkyDistalJoint: {fileID: 0}
   pinkyTip: {fileID: 0}
+  pinchPoint: {fileID: 0}
   _chirality: 1
   _isTracked: 1
 --- !u!1 &508467742
@@ -3084,9 +3129,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 508467745}
   _finger: 2
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!114 &510901185 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 42634058053967804, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
@@ -3212,9 +3263,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 551160547}
   _finger: 3
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!114 &597501884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3326,27 +3383,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _physicsHand:
-    triggerDistance: 0.004
-    maximumPalmVelocity: 300
-    minimumPalmVelocity: 50
-    maximumFingerVelocity: 200
-    minimumFingerVelocity: 50
-    maximumPalmAngularVelocity: 8000
-    minimumPalmAngularVelocity: 6000
-    currentPalmVelocity: 300
-    currentPalmAngularVelocity: 8000
-    currentPalmVelocityInterp: 0
-    currentPalmWeightInterp: 0
-    currentPalmWeight: 0
-    oldPosition: {x: 0, y: 0, z: 0}
+    parameters:
+      hoverDistance: 0.04
+      contactDistance: 0.002
+      maximumPalmVelocity: 300
+      minimumPalmVelocity: 50
+      maximumPalmAngularVelocity: 8000
+      minimumPalmAngularVelocity: 6000
+      maximumFingerVelocity: 200
+      minimumFingerVelocity: 50
+      boneStiffness: 100
+      boneForceLimit: 1000
+      boneMass: 0.1
+      teleportDistance: 0.1
     gameObject: {fileID: 1521661554}
     rootObject: {fileID: 623990352}
-    previousDataPosition: {x: 0, y: 0, z: 0}
-    computedPhysicsPosition: {x: 0, y: 0, z: 0}
-    elbowPosition: {x: 0, y: 0, z: 0}
-    computedHandDistance: 0
-    previousDataRotation: {x: 0, y: 0, z: 0, w: 0}
-    computedPhysicsRotation: {x: 0, y: 0, z: 0, w: 0}
     transform: {fileID: 1521661558}
     palmBone: {fileID: 1521661557}
     palmBody: {fileID: 1521661556}
@@ -3399,20 +3450,8 @@ MonoBehaviour:
     - {fileID: 981736144}
     - {fileID: 1025873304}
     - {fileID: 459097683}
-    overRotationFrameCount: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    defaultRotations:
-    - {x: -0.66444665, y: 0.34441158, z: 0.56378216, w: 0.34934354}
-    - {x: -0.1985088, y: 0.549382, z: 0.8101427, w: 0.04942208}
-    - {x: -0.09523581, y: 0.55546176, z: 0.82590574, w: 0.01649454}
-    - {x: -0.013266281, y: 0.54483914, z: 0.8380312, w: 0.026037559}
-    - {x: 0.081206754, y: 0.50801295, z: 0.85746795, w: -0.008782235}
-    - {x: -0.12940948, y: 0.4829629, z: 0.8627299, w: 0.07547908}
-    justGhosted: 0
-    stiffness: 200
-    forceLimit: 1000
-    boneMass: 0.1
-    physicMaterial: {fileID: 710639769}
   _handedness: 0
+  _showDistanceVisualisations: 0
 --- !u!4 &623990354
 Transform:
   m_ObjectHideFlags: 0
@@ -3532,6 +3571,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1390040089287631551, guid: c3237f3a111f87042904ff2fda1e519d, type: 2}
+--- !u!134 &686213841
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1 &689213642
 GameObject:
   m_ObjectHideFlags: 0
@@ -3646,9 +3697,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 689213645}
   _finger: 3
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &696527714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3811,30 +3868,6 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 0
   bounceCombine: 1
---- !u!134 &712755521
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &716154850
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1001 &721065840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4030,9 +4063,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 733771900}
   _finger: 4
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &786075271
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,9 +4282,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 826454603}
   _finger: 2
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!134 &828848503
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -4355,6 +4400,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835950416}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!134 &867546792
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1001 &886031530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4501,18 +4558,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &903805384
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &903853652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,9 +4672,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 903853655}
   _finger: 2
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &923849972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,9 +4795,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 923849975}
   _finger: 0
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &925313616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d18a48cd7046f94a8777be13a1d23b1, type: 3}
@@ -5036,30 +5093,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4919733445201370149, guid: 7641adf1a7937f94bb9780e183baaeae, type: 3}
   m_PrefabInstance: {fileID: 7517110869294473232}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &938459960
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &940274682
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &941470374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2945233218002697858, guid: 85bdae4f36eb5b14c9fac95aec79bf2f, type: 3}
@@ -5176,6 +5209,7 @@ MonoBehaviour:
   pinkyMiddleJoint: {fileID: 0}
   pinkyDistalJoint: {fileID: 0}
   pinkyTip: {fileID: 0}
+  pinchPoint: {fileID: 0}
   _chirality: 0
   _isTracked: 1
 --- !u!1 &951419486 stripped
@@ -5238,7 +5272,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 16847663}
+      objectReference: {fileID: 686213841}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5290,7 +5324,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 16847663}
+      objectReference: {fileID: 686213841}
     - target: {fileID: 6114337822547080949, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _tableColor.a
       value: 0.93333334
@@ -5623,9 +5657,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 981736145}
   _finger: 4
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &982656278
 GameObject:
   m_ObjectHideFlags: 0
@@ -5740,9 +5780,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 982656281}
   _finger: 3
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &995329090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5857,9 +5903,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 995329093}
   _finger: 1
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1025192232
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,9 +6076,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1025873305}
   _finger: 4
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1062673958
 GameObject:
   m_ObjectHideFlags: 0
@@ -6057,27 +6115,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _physicsHand:
-    triggerDistance: 0.004
-    maximumPalmVelocity: 300
-    minimumPalmVelocity: 50
-    maximumFingerVelocity: 200
-    minimumFingerVelocity: 50
-    maximumPalmAngularVelocity: 8000
-    minimumPalmAngularVelocity: 6000
-    currentPalmVelocity: 300
-    currentPalmAngularVelocity: 8000
-    currentPalmVelocityInterp: 0
-    currentPalmWeightInterp: 0
-    currentPalmWeight: 0
-    oldPosition: {x: 0, y: 0, z: 0}
+    parameters:
+      hoverDistance: 0.04
+      contactDistance: 0.002
+      maximumPalmVelocity: 300
+      minimumPalmVelocity: 50
+      maximumPalmAngularVelocity: 8000
+      minimumPalmAngularVelocity: 6000
+      maximumFingerVelocity: 200
+      minimumFingerVelocity: 50
+      boneStiffness: 100
+      boneForceLimit: 1000
+      boneMass: 0.1
+      teleportDistance: 0.1
     gameObject: {fileID: 281425856}
     rootObject: {fileID: 1062673958}
-    previousDataPosition: {x: 0, y: 0, z: 0}
-    computedPhysicsPosition: {x: 0, y: 0, z: 0}
-    elbowPosition: {x: 0, y: 0, z: 0}
-    computedHandDistance: 0
-    previousDataRotation: {x: 0, y: 0, z: 0, w: 0}
-    computedPhysicsRotation: {x: 0, y: 0, z: 0, w: 0}
     transform: {fileID: 281425860}
     palmBone: {fileID: 281425859}
     palmBody: {fileID: 281425858}
@@ -6130,20 +6182,8 @@ MonoBehaviour:
     - {fileID: 1375889601}
     - {fileID: 733771899}
     - {fileID: 1357327416}
-    overRotationFrameCount: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    defaultRotations:
-    - {x: -0.6644467, y: -0.34441155, z: -0.5637821, w: 0.34934357}
-    - {x: -0.19850887, y: -0.549382, z: -0.8101427, w: 0.04942213}
-    - {x: -0.095235884, y: -0.55546176, z: -0.82590574, w: 0.016494589}
-    - {x: -0.013266354, y: -0.54483914, z: -0.8380312, w: 0.026037607}
-    - {x: 0.08120667, y: -0.50801295, z: -0.85746795, w: -0.00878219}
-    - {x: -0.12940955, y: -0.4829629, z: -0.8627299, w: 0.07547912}
-    justGhosted: 0
-    stiffness: 200
-    forceLimit: 1000
-    boneMass: 0.1
-    physicMaterial: {fileID: 2128254523}
   _handedness: 1
+  _showDistanceVisualisations: 0
 --- !u!4 &1062673960
 Transform:
   m_ObjectHideFlags: 0
@@ -6388,9 +6428,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1124573046}
   _finger: 0
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1001 &1133469159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6401,7 +6447,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1870587184}
+      objectReference: {fileID: 439460661}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6453,7 +6499,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 1870587184}
+      objectReference: {fileID: 439460661}
     - target: {fileID: 6114337822547080949, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _tableColor.a
       value: 0.93333334
@@ -6505,7 +6551,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8278762408294610013, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
   m_PrefabInstance: {fileID: 1133469159}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &1137797218
+--- !u!134 &1144393320
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6630,9 +6676,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1159870216}
   _finger: 1
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1176922926
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,33 +6799,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1176922929}
   _finger: 0
   _joint: 1
---- !u!134 &1232945339
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &1233972055
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1239991996
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,9 +7035,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1267500518}
   _finger: 3
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1281046597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7118,9 +7158,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1281046600}
   _finger: 0
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!4 &1317746596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278762408294610013, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
@@ -7239,9 +7285,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1357327418}
   _finger: 4
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1369081568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96b537658eae2bf478cc137292be4af8, type: 3}
@@ -7760,21 +7812,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1375889602}
   _finger: 4
   _joint: 0
---- !u!134 &1435580912
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1456734510
 GameObject:
   m_ObjectHideFlags: 0
@@ -7889,41 +7935,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456734510}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!134 &1461157507
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!114 &1474155352 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2126680644353598790, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
-  m_PrefabInstance: {fileID: 318676916}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!134 &1506899735
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1521661554
 GameObject:
   m_ObjectHideFlags: 0
@@ -8021,9 +8032,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1521661556}
   _finger: 5
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!4 &1521661558
 Transform:
   m_ObjectHideFlags: 0
@@ -8070,7 +8087,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!134 &1631650551
+--- !u!134 &1616541265
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
+--- !u!134 &1625973081
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8196,9 +8225,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 623990353}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1633033502}
   _finger: 1
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1 &1638095393
 GameObject:
   m_ObjectHideFlags: 0
@@ -8312,9 +8347,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1638095396}
   _finger: 2
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!134 &1641620139
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -8327,7 +8368,7 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 3
   bounceCombine: 0
---- !u!134 &1647617513
+--- !u!134 &1663250506
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8436,18 +8477,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8278762408294610013, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
   m_PrefabInstance: {fileID: 957502167}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &1699570771
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1706951344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8440096662978158403, guid: 5a2582c1445b838408c491e44b4b015c, type: 3}
@@ -9507,18 +9536,6 @@ MonoBehaviour:
   - {fileID: 1706951346}
   _isTrigger: 0
   _material: {fileID: 0}
---- !u!134 &1733741727
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1746029287
 GameObject:
   m_ObjectHideFlags: 0
@@ -9633,9 +9650,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1746029290}
   _finger: 3
   _joint: 0
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!1001 &1791360656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14737,6 +14760,19 @@ MonoBehaviour:
   _automaticHandsResetLayer: 1
   _interHandCollisions: 0
   _perBoneMass: 0.1
+  _handParameters:
+    hoverDistance: 0.04
+    contactDistance: 0.002
+    maximumPalmVelocity: 300
+    minimumPalmVelocity: 50
+    maximumPalmAngularVelocity: 8000
+    minimumPalmAngularVelocity: 6000
+    maximumFingerVelocity: 200
+    minimumFingerVelocity: 50
+    boneStiffness: 100
+    boneForceLimit: 1000
+    boneMass: 0.1
+    teleportDistance: 0.1
   _handTeleportDistance: 0.15
   _handSolverIterations: 20
   _handSolverVelocityIterations: 15
@@ -14762,18 +14798,6 @@ Transform:
   m_Father: {fileID: 901722085}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &1870587184
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1882974074
 GameObject:
   m_ObjectHideFlags: 0
@@ -15002,9 +15026,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 1892273720}
   _finger: 2
   _joint: 1
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!114 &1900499673 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5270838610523157747, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
@@ -15021,18 +15051,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5270838610523157748, guid: d1c00f89ef60a3446ad9eef2d361e2a1, type: 3}
   m_PrefabInstance: {fileID: 1823644880}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &1913617427
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1940643034
 GameObject:
   m_ObjectHideFlags: 0
@@ -15147,31 +15165,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940643034}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!134 &1959559225
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &2012302348
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &2018570217
+--- !u!134 &2011519332
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15315,18 +15309,6 @@ Transform:
   m_Father: {fileID: 47351887}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &2068620316
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &2097522797
 GameObject:
   m_ObjectHideFlags: 0
@@ -16024,9 +16006,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1062673959}
+  <IsBoneHovering>k__BackingField: 0
+  <IsBoneContacting>k__BackingField: 0
+  <IsBoneReadyToGrab>k__BackingField: 0
+  <IsBoneGrabbing>k__BackingField: 0
   _body: {fileID: 2111210025}
   _finger: 1
   _joint: 2
+  _objectDistance: 3.4028235e+38
+  <DisplacementAmount>k__BackingField: 0
 --- !u!114 &2114226373 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 42634057816984825, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
@@ -16135,6 +16123,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115256910}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!134 &2126815191
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Button Material
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0
+  frictionCombine: 3
+  bounceCombine: 0
 --- !u!1001 &2127453145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16145,7 +16145,7 @@ PrefabInstance:
     - target: {fileID: 519081648886951255, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1699570771}
+      objectReference: {fileID: 1663250506}
     - target: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -16197,7 +16197,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
-      objectReference: {fileID: 1699570771}
+      objectReference: {fileID: 1663250506}
     - target: {fileID: 6114337822547080949, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _tableColor.a
       value: 0.93333334

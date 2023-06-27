@@ -20,23 +20,23 @@ public abstract class SimplePhysicsGrab : MonoBehaviour
         _physicsProvider = FindAnyObjectByType<PhysicsProvider>();
         if (_physicsProvider != null)
         {
-            _physicsProvider.OnObjectStateChange += OnObjectStateChange;
+            foreach (var item in _rigidbodies)
+            {
+                _physicsProvider.SubscribeToStateChanges(item, OnObjectStateChange);
+            }
         }
     }
 
-    private void OnObjectStateChange(Rigidbody rigid, PhysicsGraspHelper helper)
+    private void OnObjectStateChange(PhysicsGraspHelper helper)
     {
-        if (_rigidbodies.Contains(rigid))
+        if (helper.GraspState == PhysicsGraspHelper.State.Grasp)
         {
-            if (helper.GraspState == PhysicsGraspHelper.State.Grasp)
-            {
-                _currentGrabbed.Add(rigid);
-            }
-            else
-            {
-                _currentGrabbed.Remove(rigid);
-            }
-            _grabbed = _currentGrabbed.Count > 0;
+            _currentGrabbed.Add(helper.Rigidbody);
         }
+        else
+        {
+            _currentGrabbed.Remove(helper.Rigidbody);
+        }
+        _grabbed = _currentGrabbed.Count > 0;
     }
 }

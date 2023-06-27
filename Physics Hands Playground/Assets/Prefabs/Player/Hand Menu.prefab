@@ -101,7 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfdc811f6b2f964f9839cad8ceba7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisableHandCollisions: 0
+  DisableAllHandCollisions: 0
+  DisableSpecificHandCollisions: 0
+  DisabledHandedness: 0
 --- !u!54 &42634057409736269
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -294,7 +296,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 42634057742625205}
   _buttonElement: {fileID: 42634058768397133}
+  _ignoreHelper: {fileID: 42634058768397134}
   _handsOnly: 1
+  _fingerTipsOnly: 0
+  _allowLeftHand: 1
+  _allowRightHand: 1
   buttonHeightLimit: 0.007
   _springForce: 100
   _springDampening: 5
@@ -542,7 +548,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfdc811f6b2f964f9839cad8ceba7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisableHandCollisions: 0
+  DisableAllHandCollisions: 0
+  DisableSpecificHandCollisions: 0
+  DisabledHandedness: 0
 --- !u!54 &42634057766791720
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -780,7 +788,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 42634057816984824}
   _buttonElement: {fileID: 42634057409736267}
+  _ignoreHelper: {fileID: 42634057409736268}
   _handsOnly: 1
+  _fingerTipsOnly: 0
+  _allowLeftHand: 1
+  _allowRightHand: 1
   buttonHeightLimit: 0.007
   _springForce: 100
   _springDampening: 5
@@ -926,7 +938,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 42634058053967807}
   _buttonElement: {fileID: 42634057766791718}
+  _ignoreHelper: {fileID: 42634057766791723}
   _handsOnly: 1
+  _fingerTipsOnly: 0
+  _allowLeftHand: 1
+  _allowRightHand: 1
   buttonHeightLimit: 0.007
   _springForce: 100
   _springDampening: 5
@@ -1401,7 +1417,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfdc811f6b2f964f9839cad8ceba7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisableHandCollisions: 0
+  DisableAllHandCollisions: 0
+  DisableSpecificHandCollisions: 0
+  DisabledHandedness: 0
 --- !u!54 &42634058768397135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2321,7 +2339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfdc811f6b2f964f9839cad8ceba7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisableHandCollisions: 0
+  DisableAllHandCollisions: 0
+  DisableSpecificHandCollisions: 0
+  DisabledHandedness: 0
 --- !u!54 &8977687462343415636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2549,7 +2569,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1273067553009812032}
   _buttonElement: {fileID: 8117862984286341033}
+  _ignoreHelper: {fileID: 930631829827839055}
   _handsOnly: 1
+  _fingerTipsOnly: 0
+  _allowLeftHand: 1
+  _allowRightHand: 1
   buttonHeightLimit: 0.007
   _springForce: 100
   _springDampening: 5
@@ -2917,7 +2941,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 639507277207406305}
   _buttonElement: {fileID: 7487974302366379742}
+  _ignoreHelper: {fileID: 7016120483102808900}
   _handsOnly: 1
+  _fingerTipsOnly: 0
+  _allowLeftHand: 1
+  _allowRightHand: 1
   buttonHeightLimit: 0.007
   _springForce: 100
   _springDampening: 5
@@ -3164,7 +3192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfdc811f6b2f964f9839cad8ceba7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisableHandCollisions: 0
+  DisableAllHandCollisions: 0
+  DisableSpecificHandCollisions: 0
+  DisabledHandedness: 0
 --- !u!54 &5605350597851138414
 Rigidbody:
   m_ObjectHideFlags: 0
