@@ -29,6 +29,9 @@ public abstract class SimplePhysicsGrab : MonoBehaviour
 
     private void OnObjectStateChange(PhysicsGraspHelper helper)
     {
+        if (helper == null)
+            return;
+
         if (helper.GraspState == PhysicsGraspHelper.State.Grasp)
         {
             _currentGrabbed.Add(helper.Rigidbody);
