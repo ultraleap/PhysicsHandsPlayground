@@ -61,8 +61,7 @@ public class SummonToy : MonoBehaviour
     [SerializeField]
     private Transform _debug;
 
-    [SerializeField]
-    private bool _pose, _vel;
+    private bool _releasePoseL, _releasePoseR, _releaseVelL, _releaseVelR;
 
     private List<SummonData> _summons = new List<SummonData>();
 
@@ -308,6 +307,8 @@ public class SummonToy : MonoBehaviour
         {
             Hand hand = _inputProvider.GetHand(Chirality.Right);
             _targetPosition = hand.PalmPosition + (hand.Direction * 0.06f) + (hand.PalmNormal * 0.04f);
+            _releasePoseR = true;
+            _releaseVelR = true;
             return true;
         }
         return false;
@@ -318,7 +319,9 @@ public class SummonToy : MonoBehaviour
         if (hand == null)
             return false;
 
-        if(hand.GetChirality() == Chirality.Left)
+        Chirality handedness = hand.GetChirality();
+
+        if (handedness == Chirality.Left)
         {
             if (_physicsProvider.LeftHand.IsGrasping)
             {
@@ -334,20 +337,48 @@ public class SummonToy : MonoBehaviour
         }
 
         // If we're neither wanting pinch or grab
-        _pose = !_usePinch && !_useGrab;
+        bool pose = !_usePinch && !_useGrab;
         if ((_usePinch && (hand.PinchDistance / 1000f) < _pinchDistance) || (_useGrab && hand.GetFistStrength() > _grabThreshold))
         {
-            _pose = true;
+            if((handedness == Chirality.Left && !_releasePoseL) || (handedness == Chirality.Right && !_releasePoseR))
+            {
+                pose = true;
+            }
+        }
+        else
+        {
+            if(handedness == Chirality.Left)
+            {
+                _releasePoseL = false;
+            }
+            else
+            {
+                _releasePoseR = false;
+            }
         }
 
         // Ignore velocity if off
-        _vel = !_useVelocity;
+        bool vel = !_useVelocity;
         if (hand.PalmVelocity.y > _velocityThreshold)
         {
-            _vel = true;
+            if ((handedness == Chirality.Left && !_releaseVelL) || (handedness == Chirality.Right && !_releaseVelR))
+            {
+                vel = true;
+            }
+        }
+        else
+        {
+            if (handedness == Chirality.Left)
+            {
+                _releaseVelL = false;
+            }
+            else
+            {
+                _releaseVelR = false;
+            }
         }
 
-        return _pose && _vel;
+        return pose && vel;
     }
 
     private void Summon()

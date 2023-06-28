@@ -68,11 +68,6 @@ public class ParachuteToy : MonoBehaviour
 
     private void OnObjectStateChange(PhysicsGraspHelper helper)
     {
-        if(helper == null)
-        {
-            _characterGrabbed = false;
-            return;
-        }
         _characterGrabbed = helper.GraspState == PhysicsGraspHelper.State.Grasp;
     }
 
