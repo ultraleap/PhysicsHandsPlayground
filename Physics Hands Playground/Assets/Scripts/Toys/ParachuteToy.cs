@@ -1,4 +1,4 @@
-using Leap.Unity.Interaction.PhysicsHands;
+using Leap.Unity.PhysicalHands;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ public class ParachuteToy : MonoBehaviour
     [SerializeField]
     private Rigidbody _character, _parachute;
 
-    private PhysicsProvider _physicProvider;
+    private PhysicalHandEvents _characterEvents;
 
     [SerializeField]
     private float _yThreshold = -0.2f;
@@ -40,17 +40,20 @@ public class ParachuteToy : MonoBehaviour
 
     private void FindElements()
     {
-        if (_physicProvider == null)
+        if (_characterEvents == null)
         {
-            _physicProvider = FindObjectOfType<PhysicsProvider>(true);
+            _characterEvents = _character.GetComponent<PhysicalHandEvents>();
         }
     }
 
     private void Setup()
     {
-        if(_physicProvider != null)
+        if(_characterEvents != null)
         {
-            _physicProvider.SubscribeToStateChanges(_character, OnObjectStateChange);
+            _characterEvents.onLeftHandContactEnter.AddListener((hand) => { OnObjectGrabChange(true); });
+            _characterEvents.onRightHandContactEnter.AddListener((hand) => { OnObjectGrabChange(true); });
+            _characterEvents.onLeftHandContactExit.AddListener((hand) => { OnObjectGrabChange(false); });
+            _characterEvents.onRightHandContactExit.AddListener((hand) => { OnObjectGrabChange(false); });
         }
         _originalDrag = _character.drag;
         _originalAngularDrag = _character.angularDrag;
@@ -66,9 +69,9 @@ public class ParachuteToy : MonoBehaviour
         }
     }
 
-    private void OnObjectStateChange(PhysicsGraspHelper helper)
+    private void OnObjectGrabChange(bool enter)
     {
-        _characterGrabbed = helper.GraspState == PhysicsGraspHelper.State.Grasp;
+        _characterGrabbed = enter;
     }
 
     private void FixedUpdate()

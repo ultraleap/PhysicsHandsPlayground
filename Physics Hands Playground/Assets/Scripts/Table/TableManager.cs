@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Leap.Unity.Interaction.PhysicsHands.Playground
+namespace Leap.Unity.PhysicalHands.Playground
 {
     public class TableManager : MonoBehaviour
     {
@@ -18,7 +18,7 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
 
         [SerializeField]
         private Transform _buttonRotation = null;
-        private PhysicsButton _physicsButton;
+        private PhysicalHandsButton _physicalHandButton;
 
         private List<Rigidbody> _rigids = new List<Rigidbody>();
         private List<bool> _states = new List<bool>();
@@ -45,8 +45,8 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
                 _states.Add(rigid.gameObject.activeInHierarchy);
             }
 
-            _physicsButton = GetComponentInChildren<PhysicsButton>(true);
-            _physicsButton.OnPress += OnButtonPress;
+            _physicalHandButton = GetComponentInChildren<PhysicalHandsButton>(true);
+            _physicalHandButton.OnButtonPressed.AddListener(OnButtonPress);
 
             _teleportPositions.Clear();
             foreach (Transform transform in _teleportParent)

@@ -405,7 +405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1650795662159154696
 Transform:
   m_ObjectHideFlags: 0
@@ -433,10 +433,8 @@ GameObject:
   - component: {fileID: 7936865882492667734}
   - component: {fileID: 2479673754307730805}
   - component: {fileID: 2521219483907901366}
-  - component: {fileID: 903723547962737348}
   - component: {fileID: 7247063348552967735}
   - component: {fileID: 5966671422493632308}
-  - component: {fileID: 3799698155474539753}
   - component: {fileID: 519081648886951255}
   m_Layer: 0
   m_Name: ButtonInner
@@ -511,21 +509,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &903723547962737348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2797928787013482829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dfdc811f6b2f964f9839cad8ceba7ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisableAllHandCollisions: 0
-  DisableSpecificHandCollisions: 0
-  DisabledHandedness: 0
 --- !u!54 &7247063348552967735
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -638,23 +621,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &3799698155474539753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2797928787013482829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be7f20afa3eb5a9429ef5c89fbaaa5db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _button: {fileID: 0}
-  <IgnoreHelpers>k__BackingField: {fileID: 903723547962737348}
-  <Rigid>k__BackingField: {fileID: 7247063348552967735}
-  <Joint>k__BackingField: {fileID: 5966671422493632308}
-  _material: {fileID: 0}
 --- !u!65 &519081648886951255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -836,7 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5130468068417918637}
-  - component: {fileID: 4642223478370761758}
+  - component: {fileID: 2335578607765948653}
   - component: {fileID: 2599554395786449591}
   m_Layer: 0
   m_Name: Smooth Button
@@ -862,7 +828,7 @@ Transform:
   m_Father: {fileID: 1650795662159154696}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &4642223478370761758
+--- !u!114 &2335578607765948653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -871,43 +837,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 5510370928388246551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
+  m_Script: {fileID: 11500000, guid: cd4cd2218a9d1694bb00926ae50322f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 2599554395786449591}
-  _buttonElement: {fileID: 3799698155474539753}
-  _ignoreHelper: {fileID: 903723547962737348}
-  _handsOnly: 1
-  _fingerTipsOnly: 0
-  _allowLeftHand: 1
-  _allowRightHand: 1
-  buttonHeightLimit: 0.01
-  _springForce: 100
-  _springDampening: 5
-  isToggleable: 0
-  buttonToggleHeightLimit: 0
-  _OnHover:
+  buttonObject: {fileID: 2797928787013482829}
+  _buttonShouldDelayRebound: 0
+  _buttonStaydownTimer: 2
+  _shouldOnlyBePressedByHand: 0
+  _whichHandCanPressButton: 2
+  OnButtonPressed:
     m_PersistentCalls:
       m_Calls: []
-  _OnUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _OnContact:
-    m_PersistentCalls:
-      m_Calls: []
-  _OnUncontact:
-    m_PersistentCalls:
-      m_Calls: []
-  _OnPress:
-    m_PersistentCalls:
-      m_Calls: []
-  _OnUnpress:
-    m_PersistentCalls:
-      m_Calls: []
-  _OnPressedAmountChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  _OnToggle:
+  OnButtonUnPressed:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &2599554395786449591

@@ -1,4 +1,3 @@
-using Leap.Unity.Interaction.PhysicsHands;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,7 +23,7 @@ public class ShaderFloatOnGrab : SimplePhysicsGrab
     protected override void Awake()
     {
         base.Awake();
-        foreach (var rigid in _rigidbodies)
+        foreach (var rigid in _eventObjects)
         {
             if(rigid.TryGetComponent<Renderer>(out var temp))
             {

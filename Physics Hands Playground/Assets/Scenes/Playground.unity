@@ -128,18 +128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4919733445201370149, guid: 7641adf1a7937f94bb9780e183baaeae, type: 3}
   m_PrefabInstance: {fileID: 237179842}
   m_PrefabAsset: {fileID: 0}
---- !u!134 &26938071
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &28879679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,7 +1210,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _button
       value: 
-      objectReference: {fileID: 175203800}
+      objectReference: {fileID: 0}
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
@@ -1274,17 +1262,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
   m_PrefabInstance: {fileID: 175203798}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &175203800 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4642223478370761758, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
-  m_PrefabInstance: {fileID: 175203798}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &175569134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,7 +2376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &320889562
 Transform:
   m_ObjectHideFlags: 0
@@ -2632,18 +2609,6 @@ MonoBehaviour:
   _joint: 0
   _objectDistance: 3.4028235e+38
   <DisplacementAmount>k__BackingField: 0
---- !u!134 &404514413
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!114 &411849902 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 42634057742625202, guid: c67e8ee4da95fa8439caadb21f00c9c9, type: 3}
@@ -2854,18 +2819,6 @@ MonoBehaviour:
   _joint: 2
   _objectDistance: 3.4028235e+38
   <DisplacementAmount>k__BackingField: 0
---- !u!134 &460659598
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!4 &475669222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4919733445201370149, guid: 7641adf1a7937f94bb9780e183baaeae, type: 3}
@@ -2973,7 +2926,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 481290139}
   _adjustInertiaTensor: 0
   _inertiaTensor: {x: 1, y: 1, z: 1}
-  _originalInertiaTensor: {x: 0.00974051, y: 0.004716157, z: 0.010671154}
+  _originalInertiaTensor: {x: 0.0068294825, y: 0.0019919646, z: 0.006829481}
   _adjustCenterOfMass: 1
   _centerOfMassOffset: {x: 0, y: -0.025, z: 0}
   _originalCenterOfMass: {x: 0.0059431237, y: -0.0073279324, z: -0.00011320288}
@@ -5285,18 +5238,6 @@ MonoBehaviour:
   pinchPoint: {fileID: 0}
   _chirality: 0
   _isTracked: 1
---- !u!134 &947732764
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &951419486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1142660106871293906, guid: 85bdae4f36eb5b14c9fac95aec79bf2f, type: 3}
@@ -5405,7 +5346,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _button
       value: 
-      objectReference: {fileID: 957502169}
+      objectReference: {fileID: 0}
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
@@ -5457,17 +5398,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
   m_PrefabInstance: {fileID: 957502167}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &957502169 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4642223478370761758, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
-  m_PrefabInstance: {fileID: 957502167}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &957502170 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6114337822547080949, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
@@ -5998,18 +5928,6 @@ MonoBehaviour:
   _joint: 1
   _objectDistance: 3.4028235e+38
   <DisplacementAmount>k__BackingField: 0
---- !u!134 &999748303
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &1025192232
 GameObject:
   m_ObjectHideFlags: 0
@@ -6792,7 +6710,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _button
       value: 
-      objectReference: {fileID: 1133469161}
+      objectReference: {fileID: 0}
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
@@ -6832,17 +6750,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
   m_PrefabInstance: {fileID: 1133469159}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1133469161 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4642223478370761758, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
-  m_PrefabInstance: {fileID: 1133469159}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1133469162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278762408294610013, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
@@ -7094,18 +7001,6 @@ MonoBehaviour:
   _objectDistance: 3.4028235e+38
   <DisplacementAmount>k__BackingField: 0
 --- !u!134 &1201785588
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &1238761266
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8421,18 +8316,6 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 3
 --- !u!134 &1567624602
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
---- !u!134 &1574742569
 PhysicMaterial:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15526,18 +15409,6 @@ PhysicMaterial:
   bounciness: 0
   frictionCombine: 3
   bounceCombine: 0
---- !u!134 &2026146806
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!1 &2054880632
 GameObject:
   m_ObjectHideFlags: 0
@@ -15670,18 +15541,6 @@ Transform:
   m_Father: {fileID: 47351887}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &2060395757
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Button Material
-  dynamicFriction: 1
-  staticFriction: 1
-  bounciness: 0
-  frictionCombine: 3
-  bounceCombine: 0
 --- !u!134 &2074521887
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -15735,6 +15594,7 @@ GameObject:
   - component: {fileID: 2097522801}
   - component: {fileID: 2097522800}
   - component: {fileID: 2097522799}
+  - component: {fileID: 2097522831}
   m_Layer: 0
   m_Name: Geo_Rabbit (1)
   m_TagString: Untagged
@@ -16278,6 +16138,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097522797}
   m_Mesh: {fileID: 2400017133334056553, guid: 4dec840a3aa68a545b8c8adfe1d2f026, type: 3}
+--- !u!114 &2097522831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097522797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a21360bd573d44ba7d6ff4e9e213e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2111210022
 GameObject:
   m_ObjectHideFlags: 0
@@ -16566,7 +16519,7 @@ PrefabInstance:
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _button
       value: 
-      objectReference: {fileID: 2127453147}
+      objectReference: {fileID: 0}
     - target: {fileID: 3799698155474539753, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
       propertyPath: _material
       value: 
@@ -16598,17 +16551,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1569074051070505091, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
   m_PrefabInstance: {fileID: 2127453145}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2127453147 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4642223478370761758, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
-  m_PrefabInstance: {fileID: 2127453145}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a6155d1ade3a442a3c9a1ff5aa29c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2127453150 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6114337822547080949, guid: 6aea8fd773e706443b7b29acc12c753a, type: 3}
@@ -17211,6 +17153,7 @@ GameObject:
   - component: {fileID: 6435114402915573877}
   - component: {fileID: 6435114402915573876}
   - component: {fileID: 6435114402915573880}
+  - component: {fileID: 6435114402915573881}
   m_Layer: 0
   m_Name: VeryGenericFoldingConsoleScreen
   m_TagString: Untagged
@@ -18814,9 +18757,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53037a7bb45ece648a8b4d0e6e29aa30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidbodies:
-  - {fileID: 8468574270502942215}
-  - {fileID: 6435114402915573877}
+  _eventObjects:
+  - {fileID: 8468574270502942219}
+  - {fileID: 6435114402915573881}
   _materialVariable: _Effect_Strength
   _valueOnIdle: 0.1
   _valueOnGrab: 0.95
@@ -19217,6 +19160,99 @@ MonoBehaviour:
   - 53
   - 142
   _rotationThreshold: 15
+--- !u!114 &6435114402915573881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2469013478793622880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a21360bd573d44ba7d6ff4e9e213e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!23 &6445043911529274820
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19675,6 +19711,7 @@ GameObject:
   - component: {fileID: 8468574270502942217}
   - component: {fileID: 8468574270502942216}
   - component: {fileID: 8468574270502942215}
+  - component: {fileID: 8468574270502942219}
   m_Layer: 0
   m_Name: VeryGenericFoldingConsole
   m_TagString: Untagged
@@ -22083,6 +22120,99 @@ MonoBehaviour:
   - {fileID: 8468574270502942216}
   _isTrigger: 0
   _material: {fileID: 0}
+--- !u!114 &8468574270502942219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055077566435537021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a21360bd573d44ba7d6ff4e9e213e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeftHandGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContactEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrabEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRightHandGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &8538314203004566884
 Transform:
   m_ObjectHideFlags: 0
