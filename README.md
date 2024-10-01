@@ -1,10 +1,10 @@
-# Physics Hands Playground
+# Physical Hands Playground
 
-![Physics Hands Playground](https://github.com/ultraleap/PhysicsHandsPlayground/assets/6281246/e445cf49-d933-430a-bc7f-1ef0db46ab7f)
+![Physical Hands Playground](https://github.com/ultraleap/PhysicsHandsPlayground/assets/6281246/e445cf49-d933-430a-bc7f-1ef0db46ab7f)
 
-This repo is a living development and demo environment for [Ultraleap Physics Hands](https://github.com/ultraleap/UnityPlugin/tree/develop/Packages/Tracking%20Preview/PhysicsHands). It centers around a core scene with multiple tables with varying types of interactable objects.
+This repo is a living development and demo environment for [Ultraleap Physical Hands](https://docs.ultraleap.com/xr-and-tabletop/xr/unity/plugin/features/physical-hands.html). It centers around a core scene with multiple tables with varying types of interactable objects.
 
-Notably this shows off an ideal project setup for Physics Hands, with a few helpful extra scripts and tools allowing you to try it out, or build off of it quickly.
+Notably this shows off an ideal project setup for Physical Hands, with a few helpful extra scripts and tools allowing you to try it out, or build off of it quickly.
 
 As this is a living development environment we will have multiple branches that will very likely include current changes and experiments. It is recommended to rely on develop for (relatively) stable project setups.
 
@@ -12,7 +12,7 @@ As this is a living development environment we will have multiple branches that 
 
 **This repo is a Unity project, and does not provide any builds.**
 
-The project is using **[Unity 2021.3.25f1](https://unity.com/releases/editor/whats-new/2021.3.25)**.
+The project is using **[Unity 2022.3.30f1](https://unity.com/releases/editor/whats-new/2022.3.30)**.
 
 You will need the same requirements as the [Ultraleap Unity Plugin](https://github.com/ultraleap/UnityPlugin/blob/develop/README.md#getting-started).
 
@@ -32,12 +32,13 @@ You may need to include other packages for specific platforms such as Pico or Vi
   - Shapes 📦
   - Figures 🐕
   - Toys 🪀
-  - Joints (coming soon) 💪
 - A simple hand menu with button interactions
-- Ideal Unity settings for Physics Hands
+- Ideal Unity settings for Physical Hands
 
 ## Feedback
 
-We love hearing feedback about Physics Hands! You can chat to us on our [Discord server](https://discord.com/invite/3VCndThqxS).
+We love hearing feedback about Physical Hands! You can chat to us via [Github Discussions](https://github.com/ultraleap/UnityPlugin/discussions).
 
 While we can't provide support for every platform or use case, as this is currently a live development environment you can be fairly sure things should be working as intended 🙂🤞
+
+Made with ♥ by @rorygames and @dwarph

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Leap.Unity;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CustomRigidbodySetup : MonoBehaviour

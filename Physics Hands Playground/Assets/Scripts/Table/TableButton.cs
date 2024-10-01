@@ -1,10 +1,10 @@
-using Leap.Unity.PhysicalHands;
+using Leap.PhysicalHands;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Leap.Unity.PhysicalHands.Playground
+namespace Leap.PhysicalHands.Playground
 {
     public class TableButton : MonoBehaviour
     {

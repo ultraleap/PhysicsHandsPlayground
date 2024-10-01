@@ -1,5 +1,4 @@
 using Leap;
-using Leap.Unity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 

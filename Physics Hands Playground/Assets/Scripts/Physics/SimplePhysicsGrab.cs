@@ -1,4 +1,4 @@
-using Leap.Unity.PhysicalHands;
+using Leap.PhysicalHands;
 using System;
 using System.Collections;
 using System.Collections.Generic;

@@ -15,5 +15,8 @@ MonoBehaviour:
   leapSubsystemEnabled: 0
   updateLeapInputSystem: 0
   updateMetaInputSystem: 0
+  startupHints: []
   showAndroidBuildArchitectureWarning: 1
-  showPhysicalHandsPhysicsSettingsWarning: 1
+  showPhysicalHandsPhysicsSettingsWarning: 0
+  pluginVersion: 7.1.0
+  pluginSource: UPM Local
