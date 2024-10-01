@@ -1,10 +1,10 @@
-using Leap.Unity.Interaction.PhysicsHands;
+using Leap.PhysicalHands;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Leap.Unity.Interaction.PhysicsHands.Playground
+namespace Leap.PhysicalHands.Playground
 {
     public class TableButton : MonoBehaviour
     {
@@ -12,8 +12,8 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
         private TableManager _tableManager = null;
         public TableManager Table => _tableManager;
         [SerializeField]
-        private PhysicsButton _physicsButton = null;
-        public PhysicsButton PhysicsButton => _physicsButton;
+        private PhysicalHandsButton _physicsButton = null;
+        public PhysicalHandsButton PhysicsButton => _physicsButton;
 
         [SerializeField]
         private TextMeshPro _text;
@@ -28,7 +28,7 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
 
         private void OnValidate()
         {
-            _physicsButton = GetComponent<PhysicsButton>();
+            _physicsButton = GetComponent<PhysicalHandsButton>();
             _text = GetComponentInChildren<TextMeshPro>();
             ApplySetup();
         }

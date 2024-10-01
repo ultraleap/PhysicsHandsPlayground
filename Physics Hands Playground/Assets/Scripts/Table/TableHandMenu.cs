@@ -1,10 +1,11 @@
-using Leap.Unity.Attachments;
+using Leap.Attachments;
+using Leap.PhysicalHands;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Leap.Unity.Interaction.PhysicsHands.Playground
+namespace Leap.PhysicalHands.Playground
 {
     public class TableHandMenu : MonoBehaviour
     {
@@ -17,19 +18,45 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
         private Transform _root;
 
         [SerializeField]
-        private PhysicsHand _handToIgnore;
+        private Chirality _handToIgnore;
+        private PhysicalHandsManager _physicalHandsManager;
         private bool _hasIgnored = false;
 
-        private bool _facingCamera = false, _grasping = false;
+        private bool _facingCamera = false, _grabbingLeft = false, _grabbingRight = false;
         private float _graspTimeout = 0.5f, _graspCurrent = 0f;
+
+        private float _changeTime = 0.25f, _currentChangeTimer = 0f;
+
 
         [SerializeField]
         private PlayerRecenter _playerRecenter = null;
 
+        private TableManager _currentTable = null;
         [SerializeField, Tooltip("Set as null to start in the middle.")]
         private TableManager _startAtTable = null;
 
-        public bool IsMenuVisible { get { return !_grasping && _handToIgnore.IsTracked && _facingCamera && _graspCurrent <= 0; } }
+        private ContactHand _ignoredHand { get { return _handToIgnore == Chirality.Left ? _physicalHandsManager.ContactParent.LeftHand : _physicalHandsManager.ContactParent.RightHand; } }
+        private ContactHand _otherHand { get { return _handToIgnore == Chirality.Left ? _physicalHandsManager.ContactParent.RightHand : _physicalHandsManager.ContactParent.LeftHand; } }
+
+        public bool IsMenuVisible
+        {
+            get
+            {
+                if(_physicalHandsManager == null)
+                {
+                    _physicalHandsManager = FindAnyObjectByType<PhysicalHandsManager>();
+                }
+
+                if(_physicalHandsManager == null || _physicalHandsManager.ContactParent == null ||
+                    _physicalHandsManager.ContactParent.LeftHand == null || _physicalHandsManager.ContactParent.RightHand == null)
+                    return false;
+
+                return (!_grabbingLeft && !_grabbingRight)
+                    && (_handToIgnore == Chirality.Left ? _physicalHandsManager.ContactParent.LeftHand.Tracked : _physicalHandsManager.ContactParent.RightHand.Tracked)
+                    && _facingCamera
+                    && _graspCurrent <= 0;
+            }
+        }
 
         private void Start()
         {
@@ -44,76 +71,75 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
                 {
                     _startAtTable = item.Table;
                 }
-                item.PhysicsButton.OnPress += () => { SetCurrentTable(item.Table); };
+                item.PhysicsButton.OnButtonPressed.AddListener(() => SetCurrentTable(item.Table));
+            }
+
+            if (_physicalHandsManager == null)
+            {
+                _physicalHandsManager = FindAnyObjectByType<PhysicalHandsManager>();
             }
 
             SetHandToIgnore();
 
+            _physicalHandsManager.OnPrePhysicsUpdate += OnBeginPhysics;
+
             _cameraCallbacks = GetComponent<SimpleFacingCameraCallbacks>();
-            _cameraCallbacks.OnBeginFacingCamera.AddListener(() => { _facingCamera = true; RecalcButtons(); });
-            _cameraCallbacks.OnEndFacingCamera.AddListener(() => { _facingCamera = false; RecalcButtons(); });
-
-            _handToIgnore.OnBeginPhysics += OnBeginPhysics;
-            _handToIgnore.OnUpdatePhysics += OnUpdatePhysics;
-            _handToIgnore.OnFinishPhysics += OnFinishPhysics;
-
-            if (_startAtTable != null)
-            {
-                StartCoroutine(ZeroTable());
-            }
+            _cameraCallbacks.OnBeginFacingCamera.AddListener(() => { ChangeVisible(true); });
+            _cameraCallbacks.OnEndFacingCamera.AddListener(() => { ChangeVisible(false); });
         }
 
-        private IEnumerator ZeroTable()
+        private void ChangeVisible(bool visible)
         {
-            yield return null;
-            yield return null;
-            SetCurrentTable(_startAtTable, true);
+            _facingCamera = visible;
+            RecalcButtons();
         }
 
         private void OnBeginPhysics()
         {
             if (!_hasIgnored)
-            {                    
+            {
                 _hasIgnored = true;
 
                 Collider[] colliders = _root.GetComponentsInChildren<Collider>(true);
 
                 foreach (var button in colliders)
                 {
-                    Physics.IgnoreCollision(button, _handToIgnore.GetPhysicsHand().palmCollider);
+                    Physics.IgnoreCollision(button, _ignoredHand.palmBone.Collider);
                 }
 
-                foreach (var bone in _handToIgnore.GetPhysicsHand().jointColliders)
+                foreach (var bone in _ignoredHand.bones)
                 {
                     foreach (var button in colliders)
                     {
-                        Physics.IgnoreCollision(button, bone);
+                        Physics.IgnoreCollision(button, bone.Collider);
                     }
                 }
             }
             RecalcButtons();
         }
 
-        private void OnUpdatePhysics()
+        private void FixedUpdate()
         {
-            if (_grasping != _handToIgnore.IsGrasping)
+            if(_currentChangeTimer > 0)
             {
-                _grasping = _handToIgnore.IsGrasping;
-                if (!_grasping)
+                _currentChangeTimer -= Time.fixedDeltaTime;
+            }
+            if (_grabbingLeft != _ignoredHand.IsGrabbing)
+            {
+                _grabbingLeft = _ignoredHand.IsGrabbing;
+                if (!_grabbingLeft)
                 {
                     _graspCurrent = _graspTimeout;
                 }
-                RecalcButtons();
             }
-        }
-
-        private void OnFinishPhysics()
-        {
-            RecalcButtons();
-        }
-
-        private void FixedUpdate()
-        {
+            if(_grabbingRight != _otherHand.IsGrabbing)
+            {
+                _grabbingRight = _otherHand.IsGrabbing;
+                if (!_grabbingRight)
+                {
+                    _graspCurrent = _graspTimeout;
+                }
+            }
             if (_graspCurrent > 0)
             {
                 _graspCurrent -= Time.fixedDeltaTime;
@@ -129,16 +155,45 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
             }
         }
 
-        private void SetCurrentTable(TableManager table, bool force = false)
+        public void SetCurrentTable(TableManager table, bool force = false)
         {
             if (!force)
             {
+                if (_currentChangeTimer > 0)
+                    return;
+
                 if (!IsMenuVisible)
                     return;
             }
 
             _playerRecenter.anchor = table.TeleportToTable().gameObject;
             _playerRecenter.Recenter();
+            _currentChangeTimer = _changeTime;
+            _currentTable = table;
+        }
+
+        public void ResetTable()
+        {
+            if (_currentChangeTimer > 0)
+                return;
+
+            if (_currentTable != null)
+            {
+                _currentTable.ResetObjects();
+                _currentChangeTimer = _changeTime;
+            }
+        }
+
+        public void RecenterPlayer()
+        {
+            if (_currentChangeTimer > 0)
+                return;
+
+            if (_currentTable != null)
+            {
+                _playerRecenter.Recenter();
+                _currentChangeTimer = _changeTime;
+            }
         }
 
         private void OnValidate()
@@ -150,23 +205,16 @@ namespace Leap.Unity.Interaction.PhysicsHands.Playground
 
         private void SetHandToIgnore()
         {
-            if (_handToIgnore == null)
+            AttachmentHand attachmentHand = GetComponentInParent<AttachmentHand>(true);
+            if (attachmentHand != null)
             {
-                PhysicsProvider provider = FindObjectOfType<PhysicsProvider>(true);
-                if (provider != null)
+                if (attachmentHand.chirality == Chirality.Left)
                 {
-                    AttachmentHand attachmentHand = GetComponentInParent<AttachmentHand>(true);
-                    if (attachmentHand != null)
-                    {
-                        if (attachmentHand.chirality == Leap.Unity.Chirality.Left)
-                        {
-                            _handToIgnore = provider.LeftHand;
-                        }
-                        else
-                        {
-                            _handToIgnore = provider.RightHand;
-                        }
-                    }
+                    _handToIgnore = Chirality.Left;
+                }
+                else
+                {
+                    _handToIgnore = Chirality.Right;
                 }
             }
         }
