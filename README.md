@@ -41,4 +41,4 @@ We love hearing feedback about Physical Hands! You can chat to us via [Github Di
 
 While we can't provide support for every platform or use case, as this is currently a live development environment you can be fairly sure things should be working as intended 🙂🤞
 
-Made with ♥ by @rorygames and @dwarph
+Made with ♥ by [@rorygames](https://github.com/rorygames) and [@dwarph](https://github.com/Dwarph/)
